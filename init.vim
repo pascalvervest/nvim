@@ -7,31 +7,32 @@ filetype off                  " required
 :set shiftwidth=4
 :set smarttab
 :set softtabstop=4
+:set expandtab
 :set mouse=a
 :set encoding=UTF-8
 :set signcolumn=yes
 
 call plug#begin()
-        Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
-        Plug 'https://github.com/preservim/nerdtree' " NerdTree
-        Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
-        Plug 'https://github.com/lifepillar/pgsql.vim' " PSQL Pluging needs :SQLSetType pgsql.vim
-        Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
-        Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
-        Plug 'https://github.com/neoclide/coc.nvim'  " Auto Completion
-        Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
-        Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
-        Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
-        Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
-        Plug 'https://github.com/airblade/vim-gitgutter'
-        Plug 'https://github.com/tpope/vim-fugitive'
-        Plug 'https://github.com/junegunn/fzf'
-        Plug 'https://github.com/junegunn/fzf.vim'
-        Plug 'https://github.com/jiangmiao/auto-pairs'
-        Plug 'https://github.com/SirVer/ultisnips'
-        Plug 'https://github.com/sandermarechal/emptylines'
-		Plug 'vim-airline/vim-airline'
-		Plug 'vim-airline/vim-airline-themes'
+    Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
+    Plug 'https://github.com/preservim/nerdtree' " NerdTree
+    Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
+    Plug 'https://github.com/lifepillar/pgsql.vim' " PSQL Pluging needs :SQLSetType pgsql.vim
+    Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
+    Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
+    Plug 'https://github.com/neoclide/coc.nvim'  " Auto Completion
+    Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
+    Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
+    Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
+    Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
+    Plug 'https://github.com/airblade/vim-gitgutter'
+    Plug 'https://github.com/tpope/vim-fugitive'
+    Plug 'https://github.com/junegunn/fzf'
+    Plug 'https://github.com/junegunn/fzf.vim'
+    Plug 'https://github.com/jiangmiao/auto-pairs'
+    Plug 'https://github.com/SirVer/ultisnips'
+    Plug 'https://github.com/sandermarechal/emptylines'
+	Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 nnoremap <leader>n :NERDTreeFocus<CR>
