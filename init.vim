@@ -33,6 +33,7 @@ call plug#begin()
     Plug 'https://github.com/sandermarechal/emptylines'
 	Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
+    Plug 'morhetz/gruvbox'
 call plug#end()
 
 nnoremap <leader>n :NERDTreeFocus<CR>
@@ -46,7 +47,7 @@ nmap <F8> :TagbarToggle<CR>
 
 :set completeopt-=preview " For No Previews
 
-:colorscheme jellybeans
+:colorscheme gruvbox
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
