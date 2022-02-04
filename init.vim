@@ -15,7 +15,6 @@ call plug#begin()
         Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
         Plug 'https://github.com/preservim/nerdtree' " NerdTree
         Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
-        Plug 'https://github.com/itchyny/lightline.vim'
         Plug 'https://github.com/lifepillar/pgsql.vim' " PSQL Pluging needs :SQLSetType pgsql.vim
         Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
         Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
@@ -31,6 +30,8 @@ call plug#begin()
         Plug 'https://github.com/jiangmiao/auto-pairs'
         Plug 'https://github.com/SirVer/ultisnips'
         Plug 'https://github.com/sandermarechal/emptylines'
+		Plug 'vim-airline/vim-airline'
+		Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 nnoremap <leader>n :NERDTreeFocus<CR>
