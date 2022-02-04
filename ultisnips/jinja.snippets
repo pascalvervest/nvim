@@ -1,0 +1,74 @@
+snippet twig "Standard twig template" b
+{% extends '${1:base.html.twig}' %}
+
+{% block body %}
+    ${VISUAL}$0
+{% endblock %}
+endsnippet
+
+snippet inc "include"
+{% include '${1}' %}$0
+endsnippet
+
+snippet ext "extends"
+{% extends '${1:base.html.twig}' %}$0
+endsnippet
+
+snippet if "if"
+{% if ${1} %}
+    ${VISUAL}$0
+{% endif %}
+endsnippet
+
+snippet else "else"
+{% else %}
+    ${VISUAL}$0
+endsnippet
+
+snippet for "for"
+{% for ${1:var} in ${2:list} %}
+	${VISUAL}${0:\{\{ $1 \}\}}
+{% endfor %}
+endsnippet
+
+snippet set "set" w
+{% set ${1:var} = ${2:value} %}$0
+endsnippet
+
+snippet }} "}}" w
+{{ ${1} }}$0
+endsnippet
+
+snippet %% "%%" w
+{% ${1} %}$0
+endsnippet
+
+snippet ## "##" w
+{# ${1} #}$0
+endsnippet
+
+snippet block "block" w
+{% block ${1:name} %}$0{% endblock %}
+endsnippet
+
+snippet debug "Debug a variable or object" w
+{% debug ${1:variable} %}$0
+endsnippet
+
+snippet tr "trans" w
+{{ '${1:message}'|trans${2:(\{'%${3:key}%': ${4:value}\})} }}$0
+endsnippet
+
+snippet trc "transchoice" w
+{{ '${1:message}'|transchoice(${2:count}${3:, \{'%${4:key}%': ${5:value}\}}) }}$0
+endsnippet
+
+snippet tra "trans block" w
+{% trans${1: with \{'%${2:key}%': ${3:value}\}} %}${6:message}{% endtrans %}$0
+endsnippet
+
+snippet trac "transchoice block"
+{% transchoice ${1:count}${2: with \{'%${3:key}%': ${4:value}\}} %}
+    ${VISUAL}$0
+{% endtranschoice %}
+endsnippet
